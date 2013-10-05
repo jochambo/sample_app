@@ -11,7 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20130927073535) do
+||||||| merged common ancestors
+ActiveRecord::Schema.define(version: 20130923085350) do
+=======
+ActiveRecord::Schema.define(version: 20131005071605) do
+>>>>>>> updating-users
 
   create_table "users", force: true do |t|
     t.string   "name"
@@ -19,7 +25,13 @@ ActiveRecord::Schema.define(version: 20130927073535) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "password_digest"
+<<<<<<< HEAD
     t.string   "remember_token"
+||||||| merged common ancestors
+=======
+    t.string   "remember_token"
+    t.boolean  "admin",           default: false
+>>>>>>> updating-users
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
